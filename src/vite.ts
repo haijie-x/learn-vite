@@ -10,7 +10,7 @@ const __dirname = dirname(__filename)
 async function createServer() {
   const app = express()
   // Create Vite server in middleware mode
-  const dir = path.resolve(__dirname, '../examples')
+  const dir = path.resolve(__dirname, '../example-vite')
   const vite = await createViteServer({
     root: dir,
     server: { middlewareMode: true },
